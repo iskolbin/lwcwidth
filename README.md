@@ -10,7 +10,7 @@ display. The value passed must be a character code.
 
 ```lua
 local wcwidth = require 'wcwidth'
-print( wcwidth( 0 ))      -- prints -1
+print( wcwidth( 0 ))      -- prints 0
 print( wcwidth( 32 ))     -- prints 1, ASCII space
 print( wcwidth( 0x0410 )) -- prints 1, cyrillic "A"
 print( wcwidth( 0x30b3 )) -- prints 2, katakana "コ"
